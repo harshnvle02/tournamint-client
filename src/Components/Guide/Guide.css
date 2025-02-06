@@ -1,0 +1,42 @@
+.guideContainer {
+    background-image: url('https://assets.challonge.com/_next/static/media/gaming-bg.b887c8b8.png');
+    position: relative;
+    top: 550px;
+    height: 554px;
+    color: white;
+    padding-top: 36px;
+    padding-left: 250px;
+    background-size: cover;
+}
+
+.titleGuide {
+    font-size: 50px;
+    color: #ffffff;
+}
+.guideDescription {
+    color: #b4b4b4;
+    width: 700px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.guideData {
+    display: flex;
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.g-data {
+    width: 100%;
+}
+
+.g-title {
+    font-style: italic;
+    font-weight: bold;
+}
+.g-description {
+    margin-right: 15px;
+    margin-top: 40px;
+    color: #b4b4b4;
+    width: 400px;
+}

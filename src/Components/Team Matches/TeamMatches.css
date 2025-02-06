@@ -1,0 +1,9 @@
+.divStyle {
+    width: 100%;
+    overflow: scroll;
+}
+
+.winnerContainer {
+    margin-top: 100px;
+    width: 100%;
+}

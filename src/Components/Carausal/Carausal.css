@@ -1,0 +1,15 @@
+.changingText {
+    font-weight: bold;
+    color: purple;
+}
+.tick-text{
+    margin-top:20px ;
+    position: relative;
+    bottom: 6px;
+    
+}
+li{
+    text-decoration: none;
+    list-style: none;
+
+}

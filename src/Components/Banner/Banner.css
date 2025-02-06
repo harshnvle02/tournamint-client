@@ -1,0 +1,30 @@
+.banner-div{
+ 
+    height: 100vh;
+    width: 150vh;
+    background-color: aqua;
+    margin: 0;
+    /* background-image: url('../Banner/sports.png');  */
+    overflow: hidden;
+    
+    
+
+ 
+}
+.img-prop{
+    height: 100vh;
+    width: 140vh;
+    filter: brightness(0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+   
+}
+
+.heading .heading-post{
+
+    color: white;
+    position: relative;
+    top: 230px;
+    left: 290px;
+}

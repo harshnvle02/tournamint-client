@@ -1,0 +1,9 @@
+.sampleContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.textDiv .carausal {
+    width: 100%;
+}
