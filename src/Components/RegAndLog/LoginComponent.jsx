@@ -68,6 +68,7 @@ const LoginComponent = ({ open, handleClose }) => {
         navigate("/addtournament/help");
       }
     } catch (error) {
+      setLoading(false);
       if (error.response && error.response.status === 401) {
         console.log(error.response.data);
         const errorMessage = error.response.data;
