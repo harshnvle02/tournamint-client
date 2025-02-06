@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Modal, Box, TextField, Typography, Button, Link } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useRef, useContext } from 'react';
@@ -31,12 +31,14 @@ const LoginComponent = ({ open, handleClose }) => {
     password: '',
   });
 
+  const [loading, setLoading] = useState(false);
 
   const loginClickHandler = async () => {
     const { uname, email, password } = formRef.current;
 
 
     try {
+      setLoading(true);
       const response = await axios.post(`${baseUrl}/api/users/login`, {
         Username: uname,
         Email: email,
@@ -44,6 +46,7 @@ const LoginComponent = ({ open, handleClose }) => {
       });
       console.log(response.data);
 
+      setLoading(false);
 
       if (response.status === 200) {
         toast.success(
@@ -146,10 +149,11 @@ const LoginComponent = ({ open, handleClose }) => {
             fullWidth
             variant="contained"
             color="primary"
+            disabled={loading}
             onClick={loginClickHandler}
             sx={{ mt: 2, p: 1, bgcolor: 'purple' }}
           >
-            Login
+            {loading ? 'Logging in...' : 'Login'}
           </Button>
           <Typography variant="body2" align="center" sx={{ mt: 2 }}>
             Don’t have an account?{' '}
