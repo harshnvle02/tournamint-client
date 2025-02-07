@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import axios from "axios";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { baseUrl } from "../baseUrl";
 
 
 const TournamentCarousel = () => {
@@ -14,7 +15,7 @@ const TournamentCarousel = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://localhost:44372/api/Tournaments/carousel");
+        const response = await axios.get(`${baseUrl}/api/Tournaments/carousel`);
         const uniqueTournaments = removeDuplicates(response.data);
         setTournaments(uniqueTournaments);
       } catch (error) {
