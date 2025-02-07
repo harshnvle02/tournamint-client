@@ -1,1 +1,1 @@
-export const baseUrl = "https://gamehost.azurewebsites.net";
+export const baseUrl = "https://localhost:44395";
